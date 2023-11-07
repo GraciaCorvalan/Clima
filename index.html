@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIMA</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="buscadorClima.css">
+</head>
+
+<body>
+    <div class="container">
+        <p>Buscardor del clima</p>
+        <label>
+            <input type="text" id="ciudad" list="cities" placeholder="Ingrese una localidad / ciudad / pais">
+            <button id="btnbuscar">BUSCAR</button>
+        </label>
+        <datalist id="cities">
+            <!--posibilidades-->
+        </datalist>
+
+        <br>
+        <br>
+        <div class="informacion">
+            <div class="infoclima">
+                <!-- nombre de la ciudad, clima, sensación termina, etc  -->
+            </div>
+            <div id="map">
+                <!-- acá va a ir el mapa -->
+            </div>
+        </div>
+    </div>
+    <script src="buscadorClima.js"></script>
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: " AIzaSyAPgaCFspnTwSeov2ghPEK3BQq80qD7uJQ", v: "beta"});</script>
+      
+</body>
+
+</html>

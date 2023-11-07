@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+body{
+    font-family: 'Bree Serif', serif;
+    background-image: linear-gradient(
+        rgba(213, 255, 27, 0.938),
+        rgba(233, 125, 23, 0.938),
+        rgb(147, 147, 219));
+    width: 100%;
+    height: 900px;
+}
+p{
+    font-size: 35px;
+    text-align: center;
+}
+label{
+    width:100%;
+    height: 100%; 
+    align-content: center;
+}
+#ciudad{
+    width:70%;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: dashed;
+    padding:10px;
+    font-family: 'Bree Serif', serif;
+}
+#btnbuscar{
+   border-radius: 10px;
+   padding: 10px; 
+   font-family: 'Bree Serif', serif;
+}
+.infoclima{
+    grid-area:box;
+}
+#map{
+    width: 60%;
+    height: 100%;
+    grid-area:map;
+}
+.informacion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap:5px;
+    grid-template-areas: 
+    "box map";
+}
+
+
+
